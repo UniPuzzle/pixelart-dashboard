@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/lato-regular-webfont.woff') format('woff'),
+    url('../fonts/lato-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/nunito-regular-webfont.woff') format('woff'),
+    url('../fonts/nunito-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/nunito-bold-webfont.woff') format('woff'),
+    url('../fonts/nunito-bold-webfont.woff2') format('woff2');
+}

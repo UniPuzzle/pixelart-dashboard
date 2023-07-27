@@ -197,7 +197,7 @@ input {
   flex-basis: calc(100% / 7 - 20px);
   margin-left: 20px;
   margin-top: 20px;
-  background-color: #aaaaaa;
+  background-color: #cecccc;
 }
 
 .dashboard-item-card {
@@ -239,6 +239,7 @@ input {
 }
 .dashboard-input-checked-card {
   margin: 0;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
 }

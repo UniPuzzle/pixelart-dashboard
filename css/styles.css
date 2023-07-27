@@ -267,13 +267,15 @@ input {
   color: #000066;
 }
 .dashboard-label-checked-cards-all {
-  margin-right: 8px;
+  padding-right: 8px;
   color: #000066;
+  cursor: pointer;
 }
 .dashboard-input-checked-cards-all {
   margin: 0;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .dashboard-input-checked-card {
   margin: 0;

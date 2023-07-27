@@ -249,6 +249,7 @@ input {
 }
 .print-btn:hover,
 .print-btn:focus {
+  transition: 50ms;
   background-color: #cecccc;
   border: 3px solid #fff;
   outline: 3px solid #cecccc;

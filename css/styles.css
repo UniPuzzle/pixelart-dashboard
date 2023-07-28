@@ -149,13 +149,13 @@ input {
 }
 .copy-link-active {
   animation-name: text-copied;
-  animation-duration: 4s;
+  animation-duration: 2500ms;
 }
 @keyframes text-copied {
   0% {
     left: -33px;
   }
-  20% {
+  15% {
     left: 45px;
   }
   100% {
@@ -245,8 +245,15 @@ input {
   border: 3px solid #cecccc;
   border-radius: 3px;
   outline: none;
+  visibility: hidden;
   cursor: pointer;
 }
+
+.print-btn-show {
+  visibility: visible;
+  cursor: pointer;
+}
+
 .print-btn:hover,
 .print-btn:focus {
   transition: 50ms;

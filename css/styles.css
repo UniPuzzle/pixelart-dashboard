@@ -184,13 +184,76 @@ input {
   color: #000;
   padding: 15px 0;
 }
+.dashboard-list-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px 0px;
+}
+.dashboard-btn-menu {
+  display: flex;
+  width: 984px;
+  padding: 20px 0px 20px 20px;
+}
+
+.button {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  flex-basis: calc(100% / 4);
+  padding: 10px;
+  color: #fff;
+  background-color: #000066;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #000038;
+}
+.button:not(:first-child) {
+  margin-left: 20px;
+}
+.dashboard-btn-worksheets {
+}
+.dashboard-btn-images {
+}
+.dashboard-btn-all {
+}
+.dashboard-btn-delete {
+  background-color: #d60910;
+}
+.dashboard-btn-delete:hover {
+  background-color: #80090d;
+}
+.dashboard-input-wrap {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.dashboard-label-checked-cards-all {
+  padding-right: 8px;
+  color: #000066;
+  cursor: pointer;
+}
+.dashboard-input-checked-cards-all {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.dashboard-input-checked-card {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
 .dashboard-list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-left: -20px;
   /* margin-top: -20px; */
-  padding: 40px 20px 20px;
+  padding: 0px 20px 20px;
 }
 
 .dashboard-item {
@@ -223,71 +286,4 @@ input {
 .dashboard-item-text {
   font-size: 12px;
   color: #000066;
-}
-.dashboard-input-wrap {
-  display: flex;
-  align-items: flex-end;
-  position: absolute;
-  right: 20px;
-  top: 16px;
-}
-.print-btn {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  color: #000066;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 6px;
-  left: 50%;
-  padding: 2px 12px;
-  border: 3px solid #cecccc;
-  border-radius: 3px;
-  outline: none;
-  visibility: hidden;
-  cursor: pointer;
-}
-
-.print-btn-show {
-  visibility: visible;
-  cursor: pointer;
-}
-
-.print-btn:hover,
-.print-btn:focus {
-  transition: 50ms;
-  background-color: #cecccc;
-  border: 3px solid #fff;
-  outline: 3px solid #cecccc;
-}
-.print-btn::after {
-  content: '';
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url(../img/icon-print.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 8px;
-
-  color: #000066;
-}
-.dashboard-label-checked-cards-all {
-  padding-right: 8px;
-  color: #000066;
-  cursor: pointer;
-}
-.dashboard-input-checked-cards-all {
-  margin: 0;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-.dashboard-input-checked-card {
-  margin: 0;
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
 }

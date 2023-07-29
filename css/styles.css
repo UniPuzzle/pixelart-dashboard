@@ -193,6 +193,10 @@ input {
   display: flex;
   width: 984px;
   padding: 20px 0px 20px 20px;
+  display: none;
+}
+.dashboard-btn-menu-show {
+  display: block;
 }
 
 .button {

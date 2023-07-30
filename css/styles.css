@@ -191,12 +191,12 @@ input {
 }
 .dashboard-btn-menu {
   display: flex;
-  width: 984px;
+  width: 985px;
   padding: 20px 0px 20px 20px;
   display: none;
 }
 .dashboard-btn-menu-show {
-  display: block;
+  display: flex;
 }
 
 .button {
@@ -279,6 +279,8 @@ input {
 
 .dashboard-item-card__img {
   padding: 4px;
+  width: 114px;
+  height: 142px;
 }
 .dashboard-item-card__content {
   margin-top: 10px;

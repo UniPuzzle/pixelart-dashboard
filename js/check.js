@@ -12,6 +12,13 @@ const checkAll = document.getElementById('checked-all');
 const checkBoxes = document.querySelectorAll(
   'input.dashboard-input-checked-card',
 );
+const spanBtnWorksheets = document.querySelectorAll('.span-btn-worksheets');
+const spanBtnImages = document.querySelectorAll('.span-btn-images');
+const spanBtnAll = document.querySelectorAll('.span-btn-all');
+const spanBtnDelete = document.querySelectorAll('.span-btn-delete');
+const dashboardItemCardImg = document.querySelectorAll(
+  '.dashboard-item-card__img',
+);
 
 // ========Displays the link text based on the link
 function displaysLinkTextBasedOnLink() {
@@ -36,6 +43,18 @@ for (let i = 0; i < checkBoxes.length; i++) {
     checkAll.checked = checkedCount > 0;
     checkAll.indeterminate =
       checkedCount > 0 && checkedCount < checkBoxes.length;
+    for (const spanBtnWorksheet of spanBtnWorksheets) {
+      spanBtnWorksheet.textContent = checkedCount + ' ';
+    }
+    for (const spanBtnImage of spanBtnImages) {
+      spanBtnImage.textContent = checkedCount + ' ';
+    }
+    for (const spanBtnAllItem of spanBtnAll) {
+      spanBtnAllItem.textContent = checkedCount + checkedCount + ' ';
+    }
+    for (const spanBtnDeleteItem of spanBtnDelete) {
+      spanBtnDeleteItem.textContent = checkedCount + ' ';
+    }
 
     // ======Show the "dashboard-btn-menu" if at least one checkbox is selected
     for (const el of btnMenu) {
@@ -50,6 +69,23 @@ for (let i = 0; i < checkBoxes.length; i++) {
 checkAll.onclick = function () {
   for (let i = 0; i < checkBoxes.length; i++) {
     checkBoxes[i].checked = this.checked;
+    const checkedCount = document.querySelectorAll(
+      'input.dashboard-input-checked-card:checked',
+    ).length;
+
+    for (const spanBtnWorksheet of spanBtnWorksheets) {
+      spanBtnWorksheet.textContent = checkedCount + ' ';
+    }
+    for (const spanBtnImage of spanBtnImages) {
+      spanBtnImage.textContent = checkedCount + ' ';
+    }
+    for (const spanBtnAllItem of spanBtnAll) {
+      spanBtnAllItem.textContent = checkedCount + checkedCount + ' ';
+    }
+    for (const spanBtnDeleteItem of spanBtnDelete) {
+      spanBtnDeleteItem.textContent = checkedCount + ' ';
+    }
+
     // ========Show "dashboard-btn-menu" if all checkboxes are selected
     for (const el of btnMenu) {
       el.classList.add('dashboard-btn-menu-show');
